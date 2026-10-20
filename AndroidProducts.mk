@@ -6,7 +6,9 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_sweet2.mk \
-    $(LOCAL_DIR)/shinkai_sweet2.mk
+    $(LOCAL_DIR)/shinkai_sweet2.mk \
+    $(LOCAL_DIR)/yaap_sweet2.mk
 
 COMMON_LUNCH_CHOICES := \
-    shinkai_sweet2-cp2a-userdebug
+    shinkai_sweet2-cp2a-userdebug \
+    yaap_sweet2-cp2a-userdebug
