@@ -43,5 +43,9 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 # Vendor security patch level
 VENDOR_SECURITY_PATCH := 2024-12-01
 
+# Build broken rules
+BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+BUILD_BROKEN_DUP_RULES := true
+
 # Inherit from proprietary files
 include vendor/xiaomi/sweet2/BoardConfigVendor.mk
