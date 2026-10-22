@@ -52,6 +52,10 @@ YAAP_BUILDTYPE := HOMEMADE
 # MarkupGoogle: Google's screenshot markup editor
 # prebuiltGmsCore: Play Services core for GMS apps
 PRODUCT_PACKAGES += \
+    WebViewGoogle \
+    TrichromeLibrary64 \
+    Chrome \
+    NexusLauncherRelease \
     MarkupGoogle \
     prebuiltGmsCore
 
@@ -64,7 +68,8 @@ PRODUCT_PACKAGES -= \
     Calculator \
     WallpaperPicker2 \
     MusicFX \
-    Recorder
+    Recorder \
+    Launcher3QuickStep
 
 # 9. Optional device overlay (uncomment when ready)
 # DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-yaap
