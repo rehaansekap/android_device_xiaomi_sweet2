@@ -20,10 +20,10 @@ PRODUCT_NAME := shinkai_sweet2
 
 PRODUCT_GMS_CLIENTID_BASE := android-google
 
-# Fingerprint & Build Properties Spoofing (Pixel 11 Pro XL Kodiak Beta DP11.261002.005)
+# Fingerprint & Build Properties Spoofing (kodiak CANARY 16484274)
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="kodiak_beta-user 17 DP11.261002.005 16594701 release-keys" \
-    BuildFingerprint=google/kodiak_beta/kodiak:17/DP11.261002.005/16594701:user/release-keys \
+    BuildDesc="generic_system_google-user CANARY ZP11.260918.007 16484274 release-keys" \
+    BuildFingerprint=google/kodiak_beta/kodiak:CANARY/ZP11.260918.007/16484274:user/release-keys \
     DeviceName=kodiak \
     DeviceProduct=kodiak_beta
 
