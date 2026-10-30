@@ -13,6 +13,10 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/yaap_sweet2_vanilla.mk
 
 COMMON_LUNCH_CHOICES := \
+    lineage_sweet2-bp2a-user \
+    lineage_sweet2-bp2a-userdebug \
+    lineage_sweet2-bp1a-user \
+    lineage_sweet2-bp1a-userdebug \
     bliss_sweet2-cp2a-user \
     bliss_sweet2-cp2a-userdebug \
     halcyon_sweet2-cp2a-user \
