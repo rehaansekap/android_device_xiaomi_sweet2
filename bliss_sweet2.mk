@@ -36,5 +36,9 @@ BLISS_MAINTAINER := rehanseekap
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SUPPORTS_QUICK_TAP := true
 
+# Allow prebuilt apps without strict uses-library enforcement
+PRODUCT_BROKEN_VERIFY_USES_LIBRARIES := true
+RELAX_USES_LIBRARY_CHECK := true
+
 # Inherit FOSS apps if available
 $(call inherit-product-if-exists, vendor/foss/foss.mk)
