@@ -2,32 +2,38 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+TARGET_BOARD_PLATFORM := sm6150
+
 # Inherit from device.
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Disable EPPE check
-TARGET_DISABLE_EPPE := true
+# Inherit from Shinkai target
+$(call inherit-product, vendor/shinkai/config/common_full_phone.mk)
 
-# Inherit Shinkai / PixelOS stuff.
-$(call inherit-product, vendor/custom/config/common_full_phone.mk)
-
-# Identitas Perangkat: Google Pixel 11 Pro XL (kodiak)
+# Identitas Perangkat: Google Pixel 6a (bluejay)
 PRODUCT_BRAND := google
 PRODUCT_DEVICE := sweet2
 PRODUCT_MANUFACTURER := Google
-PRODUCT_MODEL := Pixel 11 Pro XL
+PRODUCT_MODEL := Pixel 6a
 PRODUCT_NAME := shinkai_sweet2
 
 PRODUCT_GMS_CLIENTID_BASE := android-google
 
-# Fingerprint & Build Properties Spoofing (kodiak CANARY 16484274)
+# Fingerprint & Build Properties Spoofing (Pixel 6a bluejay CANARY 16484274)
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="generic_system_google-user CANARY ZP11.260918.007 16484274 release-keys" \
-    BuildFingerprint=google/kodiak_beta/kodiak:CANARY/ZP11.260918.007/16484274:user/release-keys \
-    DeviceName=kodiak \
-    DeviceProduct=kodiak_beta
+    BuildDesc="bluejay_beta-user CANARY ZP11.260918.007 16484274 release-keys" \
+    BuildFingerprint=google/bluejay_beta/bluejay:CANARY/ZP11.260918.007/16484274:user/release-keys \
+    DeviceName=bluejay \
+    DeviceProduct=bluejay_beta
 
-# Shinkai Specific Settings
+# Shinkai Maintainer
+SHINKAI_MAINTAINER := rehanseekap
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.shinkai.maintainer=rehanseekap \
+    ro.product.model_for_attestation=Pixel 6a \
+    ro.product.brand_for_attestation=google \
+    ro.product.name_for_attestation=bluejay_beta \
+    ro.product.device_for_attestation=bluejay \
+    ro.product.manufacturer_for_attestation=Google
+
 TARGET_SCREEN_WIDTH := 1080
-SHINKAI_MAINTAINER := "rehanseekap"
-TARGET_SUPPORTS_QUICK_TAP := true
