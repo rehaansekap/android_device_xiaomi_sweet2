@@ -33,4 +33,4 @@ SHINKAI_MAINTAINER := "rehanseekap"
 TARGET_SUPPORTS_QUICK_TAP := true
 
 # Inherit Kodiak Canary Properties
-TARGET_PRODUCT_PROP += $(LOCAL_PATH)/kodiak_canary.prop
+TARGET_PRODUCT_PROP += device/xiaomi/sweet2/kodiak_canary.prop
