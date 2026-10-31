@@ -31,3 +31,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 TARGET_SCREEN_WIDTH := 1080
 SHINKAI_MAINTAINER := "rehanseekap"
 TARGET_SUPPORTS_QUICK_TAP := true
+
+# Inherit Kodiak Canary Properties
+TARGET_PRODUCT_PROP += $(LOCAL_PATH)/kodiak_canary.prop
