@@ -10,21 +10,17 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Inherit from AOSPA / PenguinOS target
 $(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
 
-# Identitas Perangkat: Google Pixel 6a (bluejay)
-PRODUCT_BRAND := google
-PRODUCT_DEVICE := sweet2
-PRODUCT_MANUFACTURER := Google
-PRODUCT_MODEL := Pixel 6a
 PRODUCT_NAME := aospa_sweet2
+PRODUCT_DEVICE := sweet2
+PRODUCT_BRAND := Xiaomi
+PRODUCT_MODEL := Redmi Note 12 Pro
+PRODUCT_MANUFACTURER := Xiaomi
 
-PRODUCT_GMS_CLIENTID_BASE := android-google
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Fingerprint & Build Properties Spoofing (Pixel 6a bluejay CANARY 16484274)
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="bluejay_beta-user CANARY ZP11.260918.007 16484274 release-keys" \
-    BuildFingerprint=google/bluejay_beta/bluejay:CANARY/ZP11.260918.007/16484274:user/release-keys \
-    DeviceName=bluejay \
-    DeviceProduct=bluejay_beta
+    BuildDesc="sweet_global2-user 13 TKQ1.221114.001 V816.0.13.0.THGMIXM release-keys" \
+    BuildFingerprint=Redmi/sweet_global2/sweet:13/TKQ1.221114.001/V816.0.13.0.THGMIXM:user/release-keys
 
 # AOSPA / PenguinOS Maintainer
 AOSPA_MAINTAINER := rehanseekap
@@ -32,11 +28,9 @@ PENGUIN_MAINTAINER := rehanseekap
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.aospa.maintainer=rehanseekap \
     ro.penguin.maintainer=rehanseekap \
-    ro.product.model_for_attestation=Pixel 6a \
-    ro.product.brand_for_attestation=google \
-    ro.product.name_for_attestation=bluejay_beta \
-    ro.product.device_for_attestation=bluejay \
-    ro.product.manufacturer_for_attestation=Google \
+    ro.apex.updatable=false
+
+PRODUCT_SYSTEM_PROPERTIES += \
     ro.apex.updatable=false
 
 TARGET_SCREEN_WIDTH := 1080
