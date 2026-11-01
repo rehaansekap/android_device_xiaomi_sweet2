@@ -36,6 +36,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.brand_for_attestation=google \
     ro.product.name_for_attestation=bluejay_beta \
     ro.product.device_for_attestation=bluejay \
-    ro.product.manufacturer_for_attestation=Google
+    ro.product.manufacturer_for_attestation=Google \
+    ro.apex.updatable=false
 
 TARGET_SCREEN_WIDTH := 1080
