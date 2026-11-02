@@ -8,6 +8,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/yaap_sweet2_vanilla.mk
 
 COMMON_LUNCH_CHOICES := \
+    lineage_sweet2-cp2a-user \
+    lineage_sweet2-cp2a-userdebug \
     lineage_sweet2-user \
     lineage_sweet2-userdebug \
     shinkai_sweet2-cp2a-user \
