@@ -5,7 +5,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/bliss_sweet2.mk \
     $(LOCAL_DIR)/aospa_sweet2.mk \
     $(LOCAL_DIR)/yaap_sweet2.mk \
-    $(LOCAL_DIR)/yaap_sweet2_vanilla.mk
+    $(LOCAL_DIR)/yaap_sweet2_vanilla.mk \
+    $(LOCAL_DIR)/evolution_sweet2.mk
 
 COMMON_LUNCH_CHOICES := \
     lineage_sweet2-user \
@@ -19,4 +20,6 @@ COMMON_LUNCH_CHOICES := \
     aospa_sweet2-user \
     aospa_sweet2-userdebug \
     yaap_sweet2-cp2a-userdebug \
-    yaap_sweet2_vanilla-cp2a-userdebug
+    yaap_sweet2_vanilla-cp2a-userdebug \
+    evolution_sweet2-cp2a-user \
+    evolution_sweet2-cp2a-userdebug
