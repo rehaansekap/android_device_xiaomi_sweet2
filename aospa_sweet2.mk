@@ -8,21 +8,23 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 # Inherit from AOSPA / PenguinOS target
 $(call inherit-product, vendor/aospa/target/product/aospa-target.mk)
 
-# Identitas Perangkat: Google Pixel 11 Pro XL (kodiak)
-PRODUCT_BRAND := google
+# Identitas Perangkat: Xiaomi Redmi Note 12 Pro 4G (sweet2)
+PRODUCT_BRAND := Redmi
 PRODUCT_DEVICE := sweet2
-PRODUCT_MANUFACTURER := Google
-PRODUCT_MODEL := Pixel 11 Pro XL
+PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_MODEL := Redmi Note 12 Pro
 PRODUCT_NAME := aospa_sweet2
+PRODUCT_SYSTEM_DEVICE := sweet
+PRODUCT_SYSTEM_NAME := sweet_global2
 
-PRODUCT_GMS_CLIENTID_BASE := android-google
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Fingerprint & Build Properties Spoofing (Pixel 11 Pro XL Kodiak Beta DP11.261002.005)
+# Fingerprint & Build Properties: Original Redmi Note 12 Pro 4G
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="kodiak_beta-user 17 DP11.261002.005 16594701 release-keys" \
-    BuildFingerprint=google/kodiak_beta/kodiak:17/DP11.261002.005/16594701:user/release-keys \
-    DeviceName=kodiak \
-    DeviceProduct=kodiak_beta
+    BuildDesc="sweet_global2-user 13 TKQ1.221114.001 V816.0.13.0.THGMIXM release-keys" \
+    BuildFingerprint=Redmi/sweet_global2/sweet:13/TKQ1.221114.001/V816.0.13.0.THGMIXM:user/release-keys \
+    DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
+    DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
 # AOSPA / PenguinOS Maintainer
 AOSPA_MAINTAINER := rehanseekap

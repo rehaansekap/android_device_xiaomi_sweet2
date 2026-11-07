@@ -11,21 +11,23 @@ TARGET_DISABLE_EPPE := true
 # Inherit Shinkai / PixelOS stuff.
 $(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
-# Identitas Perangkat: Google Pixel 11 Pro XL (kodiak)
-PRODUCT_BRAND := google
+# Identitas Perangkat: Xiaomi Redmi Note 12 Pro 4G (sweet2)
+PRODUCT_BRAND := Redmi
 PRODUCT_DEVICE := sweet2
-PRODUCT_MANUFACTURER := Google
-PRODUCT_MODEL := Pixel 11 Pro XL
+PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_MODEL := Redmi Note 12 Pro
 PRODUCT_NAME := shinkai_sweet2
+PRODUCT_SYSTEM_DEVICE := sweet
+PRODUCT_SYSTEM_NAME := sweet_global2
 
-PRODUCT_GMS_CLIENTID_BASE := android-google
+PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-# Fingerprint & Build Properties Spoofing (Pixel 11 Pro XL Kodiak Canary ZP11.260918.007)
+# Fingerprint & Build Properties: Original Redmi Note 12 Pro 4G
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="generic_system_google-user CANARY ZP11.260918.007 16484274 release-keys" \
-    BuildFingerprint=google/kodiak_beta/kodiak:CANARY/ZP11.260918.007/16484274:user/release-keys \
-    DeviceName=kodiak \
-    DeviceProduct=kodiak_beta
+    BuildDesc="sweet_global2-user 13 TKQ1.221114.001 V816.0.13.0.THGMIXM release-keys" \
+    BuildFingerprint=Redmi/sweet_global2/sweet:13/TKQ1.221114.001/V816.0.13.0.THGMIXM:user/release-keys \
+    DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
+    DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
 # Shinkai Specific Settings
 TARGET_SCREEN_WIDTH := 1080
