@@ -17,7 +17,7 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 PRODUCT_BRAND := Redmi
 PRODUCT_DEVICE := sweet2
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := 2209116AG
+PRODUCT_MODEL := Redmi Note 12 Pro
 PRODUCT_NAME := lineage_sweet2
 PRODUCT_SYSTEM_DEVICE := sweet
 PRODUCT_SYSTEM_NAME := sweet_global2
