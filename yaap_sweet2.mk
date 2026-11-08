@@ -32,9 +32,9 @@ $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 PRODUCT_NAME := yaap_sweet2
 PRODUCT_DEVICE := sweet2
 PRODUCT_BRAND := Redmi
-PRODUCT_MODEL := Redmi Note 12 Pro
+PRODUCT_MODEL := Redmi Note 12 Pro 4G
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_SYSTEM_DEVICE := sweet
+PRODUCT_SYSTEM_DEVICE := sweet2
 PRODUCT_SYSTEM_NAME := sweet_global2
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
@@ -43,7 +43,7 @@ PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="sweet_global2-user 13 TKQ1.221114.001 V816.0.13.0.THGMIXM release-keys" \
     BuildFingerprint=Redmi/sweet_global2/sweet:13/TKQ1.221114.001/V816.0.13.0.THGMIXM:user/release-keys \
-    DeviceName=$(PRODUCT_SYSTEM_DEVICE) \
+    DeviceName=$(PRODUCT_DEVICE) \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
 # 6. Boot animation resolution (1080x2400 panel)
