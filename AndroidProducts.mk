@@ -1,4 +1,5 @@
 PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/arrow_sweet2.mk \
     $(LOCAL_DIR)/lineage_sweet2.mk \
     $(LOCAL_DIR)/rising_sweet2.mk \
     $(LOCAL_DIR)/shinkai_sweet2.mk \
@@ -9,6 +10,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/yaap_sweet2_vanilla.mk
 
 COMMON_LUNCH_CHOICES := \
+    arrow_sweet2-userdebug \
+    arrow_sweet2-user \
     lineage_sweet2-user \
     lineage_sweet2-userdebug \
     rising_sweet2-cp2a-user \
