@@ -37,6 +37,11 @@ RISING_MAINTAINER := rehanseekap
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.build.maintainer=rehanseekap
 
+# A17 menghapus ro.build.product dari build.prop, tapi releasetools RisingOS
+# masih membacanya saat OTA packaging (common.GetBuildProp)
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.product=$(PRODUCT_DEVICE)
+
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
