@@ -32,10 +32,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=$(PRODUCT_DEVICE) \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
-# Maintainer
+# Maintainer (ro.rising.maintainer sudah di-set otomatis oleh vendor/rising)
 RISING_MAINTAINER := rehanseekap
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.rising.maintainer=rehanseekap \
     ro.build.maintainer=rehanseekap
 
 TARGET_BOOT_ANIMATION_RES := 1080
