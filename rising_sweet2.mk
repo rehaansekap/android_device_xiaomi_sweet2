@@ -11,6 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device.
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
+# Maintainer (harus di-set sebelum inherit vendor/lineage agar version.mk memakainya)
+RISING_MAINTAINER := rehanseekap
+
 # Inherit some common RisingOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
@@ -32,14 +35,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceName=$(PRODUCT_DEVICE) \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
 
-# Maintainer (ro.rising.maintainer sudah di-set otomatis oleh vendor/rising)
-RISING_MAINTAINER := rehanseekap
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.build.maintainer=rehanseekap
-
-# A17 menghapus ro.build.product dari build.prop, tapi releasetools RisingOS
-# masih membacanya saat OTA packaging (common.GetBuildProp)
-PRODUCT_PROPERTY_OVERRIDES += \
+    ro.build.maintainer=rehanseekap \
     ro.build.product=$(PRODUCT_DEVICE)
 
 TARGET_BOOT_ANIMATION_RES := 1080
