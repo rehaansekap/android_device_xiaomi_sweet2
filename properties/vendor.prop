@@ -15,7 +15,7 @@ dalvik.vm.image-dex2oat-cpu-set=4,5,6,7
 dalvik.vm.image-dex2oat-threads=4
 
 # Display
-debug.sf.frame_rate_multiple_threshold=120
+# debug.sf.frame_rate_multiple_threshold=120
 ro.hardware.hwcomposer=qcom
 ro.surface_flinger.set_idle_timer_ms=4000
 ro.surface_flinger.set_touch_timer_ms=4000
@@ -32,7 +32,6 @@ ro.vendor.audio.sdk.fluencetype=fluence
 
 # Fling
 ro.min.fling_velocity=160
-ro.max.fling_velocity=20000
 ro.max.fling_velocity=20000
 ro.vendor.qti.cgroup_follow.enable=true
 persist.vendor.qti.inputopts.enable=true
