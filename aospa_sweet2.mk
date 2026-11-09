@@ -30,3 +30,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 AOSPA_MAINTAINER := rehanseekap
 PENGUIN_MAINTAINER := rehanseekap
 TARGET_SCREEN_WIDTH := 1080
+
+# Dexopt & watchdog tuning (first boot lebih toleran)
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    dalvik.vm.dex2oat-threads=4 \
+    dalvik.vm.boot-dex2oat-threads=4 \
+    ro.hw_timeout_multiplier=2

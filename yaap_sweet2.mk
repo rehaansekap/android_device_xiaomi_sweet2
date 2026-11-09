@@ -75,3 +75,9 @@ PRODUCT_PACKAGES -= \
 
 # 9. Optional device overlay (uncomment when ready)
 # DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-yaap
+
+# Dexopt & watchdog tuning (first boot lebih toleran)
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    dalvik.vm.dex2oat-threads=4 \
+    dalvik.vm.boot-dex2oat-threads=4 \
+    ro.hw_timeout_multiplier=2

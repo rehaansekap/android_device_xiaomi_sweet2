@@ -29,3 +29,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildFingerprint=Redmi/sweet_global2/sweet:13/TKQ1.221114.001/V816.0.13.0.THGMIXM:user/release-keys \
     DeviceName=$(PRODUCT_DEVICE) \
     DeviceProduct=$(PRODUCT_SYSTEM_NAME)
+
+# Dexopt & watchdog tuning (first boot lebih toleran)
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    dalvik.vm.dex2oat-threads=4 \
+    dalvik.vm.boot-dex2oat-threads=4 \
+    ro.hw_timeout_multiplier=2
