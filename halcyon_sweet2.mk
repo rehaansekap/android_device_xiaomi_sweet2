@@ -44,3 +44,9 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_SUPPORTS_QUICK_TAP := true
+
+# Dexopt & watchdog tuning (first boot lebih toleran)
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    dalvik.vm.dex2oat-threads=4 \
+    dalvik.vm.boot-dex2oat-threads=4 \
+    ro.hw_timeout_multiplier=2

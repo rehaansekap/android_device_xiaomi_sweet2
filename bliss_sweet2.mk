@@ -44,3 +44,9 @@ RELAX_USES_LIBRARY_CHECK := true
 
 # Inherit FOSS apps if available
 $(call inherit-product-if-exists, vendor/foss/foss.mk)
+
+# Dexopt & watchdog tuning (first boot lebih toleran)
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    dalvik.vm.dex2oat-threads=4 \
+    dalvik.vm.boot-dex2oat-threads=4 \
+    ro.hw_timeout_multiplier=2
