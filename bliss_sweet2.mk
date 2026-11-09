@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Inherit Bliss common config
-$(call inherit-product, vendor/bliss/config/common.mk)
+$(call inherit-product, vendor/bliss/config/common_mobile_full.mk)
 
 # Device Identity: Xiaomi Redmi Note 12 Pro 4G (sweet2)
 PRODUCT_BRAND := Redmi
