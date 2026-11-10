@@ -296,9 +296,8 @@
         -->
     <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
 
-    <!-- The default refresh rate. sweet manages this using the peak refresh rate setting, so set
-         this value to 0 so it has no effect. -->
-    <integer name="config_defaultRefreshRate">0</integer>
+    <!-- The default refresh rate. Locked to 120Hz out of the box to avoid 60/120Hz gamma flicker. -->
+    <integer name="config_defaultRefreshRate">120</integer>
 
     <!-- The default intensity level for haptic feedback. See
          Settings.System.HAPTIC_FEEDBACK_INTENSITY more details on the constant values and
@@ -335,18 +334,10 @@
          For example, no higher refresh rate if
              display brightness <= disp0 && ambient brightness <= amb0
              || display brightness <= disp1 && ambient brightness <= amb1 -->
-    <integer-array name="config_brightnessThresholdsOfPeakRefreshRate">
-        <item>10</item> <!-- 33% UI brightness -->
-        <item>14</item> <!-- 40% UI brightness -->
-    </integer-array>
-    <integer-array name="config_ambientThresholdsOfPeakRefreshRate">
-        <item>-1</item>
-        <item>20</item>
-    </integer-array>
-
-    <!-- Default refresh rate in the zone defined by brightness and ambient thresholds.
-         If non-positive, then the refresh rate is unchanged even if thresholds are configured. -->
-    <integer name="config_defaultRefreshRateInZone">120</integer>
+    <!-- Disable brightness-zone refresh rate switching on sweet2 to prevent 60<->120Hz gamma flicker -->
+    <integer-array name="config_brightnessThresholdsOfPeakRefreshRate" />
+    <integer-array name="config_ambientThresholdsOfPeakRefreshRate" />
+    <integer name="config_defaultRefreshRateInZone">0</integer>
 
     <!-- Vibrator pattern for feedback about touching a virtual key -->
     <integer-array name="config_virtualKeyVibePattern">
@@ -425,4 +416,10 @@
          user-set value if toggled by settings so the "Transition animation scale" setting
          should also be hidden if intended to be permanent. -->
     <item name="config_appTransitionAnimationDurationScaleDefault" format="float" type="dimen">0.8</item>
+
+    <!-- Biometric sensors: side power-button fingerprint (sensorId 0 : TYPE_FINGERPRINT : BIOMETRIC_STRONG) -->
+    <string-array name="config_biometric_sensors" translatable="false">
+        <item>0:2:15</item>
+    </string-array>
+    <bool name="config_is_powerbutton_fps">true</bool>
 </resources>
