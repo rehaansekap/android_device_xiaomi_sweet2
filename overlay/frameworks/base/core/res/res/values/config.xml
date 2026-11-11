@@ -422,4 +422,14 @@
         <item>0:2:15</item>
     </string-array>
     <bool name="config_is_powerbutton_fps">true</bool>
+    <add-resource type="array" name="config_sfps_sensor_props_0" />
+    <array name="config_sfps_sensor_props_0" translatable="false">
+        <item>local:4630946711218184577</item>
+        <item>1080</item>
+        <item>990</item>
+        <item>200</item>
+    </array>
+    <array name="config_sfps_sensor_props" translatable="false">
+        <item>@array/config_sfps_sensor_props_0</item>
+    </array>
 </resources>
