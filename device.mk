@@ -88,9 +88,3 @@ PRODUCT_PACKAGES += \
 
 # Call the proprietary setup
 $(call inherit-product, vendor/xiaomi/sweet2/sweet2-vendor.mk)
-
-# Google Camera (BSG MGC) — replaces stock Aperture.
-# PRODUCT_NO_CAMERA is the only supported way to drop Aperture here:
-# this tree has no PRODUCT_PACKAGES_REMOVE support.
-PRODUCT_NO_CAMERA := true
-$(call inherit-product-if-exists, vendor/GCam_sweet2/aosp/device_sweet2_gcam.mk)
