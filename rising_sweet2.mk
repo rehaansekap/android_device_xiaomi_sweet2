@@ -18,10 +18,10 @@ RISING_MAINTAINER := rehanseekap
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device Identity: Xiaomi Redmi Note 12 Pro 4G (sweet2)
-PRODUCT_BRAND := Redmi
+PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := sweet2
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := Redmi Note 12 Pro 4G
+PRODUCT_MODEL := Redmi Note 12 Pro
 PRODUCT_NAME := rising_sweet2
 PRODUCT_SYSTEM_DEVICE := sweet2
 PRODUCT_SYSTEM_NAME := sweet_global2
