@@ -11,10 +11,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device.
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common RR (Lineage-based) stuff.
-$(call inherit-product, vendor/rr/config/common_full_phone.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_BRAND := Xiaomi
+PRODUCT_BRAND := Redmi
 PRODUCT_DEVICE := sweet2
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_MODEL := Redmi Note 12 Pro 4G
