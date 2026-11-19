@@ -12,10 +12,10 @@ TARGET_DISABLE_EPPE := true
 $(call inherit-product, vendor/custom/config/common_full_phone.mk)
 
 # Identitas Perangkat: Xiaomi Redmi Note 12 Pro 4G (sweet2)
-PRODUCT_BRAND := Redmi
+PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := sweet2
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := Redmi Note 12 Pro 4G
+PRODUCT_MODEL := Redmi Note 12 Pro
 PRODUCT_NAME := shinkai_sweet2
 PRODUCT_SYSTEM_DEVICE := sweet2
 PRODUCT_SYSTEM_NAME := sweet_global2
