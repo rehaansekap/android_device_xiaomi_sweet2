@@ -32,7 +32,7 @@ $(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 PRODUCT_NAME := yaap_sweet2
 PRODUCT_DEVICE := sweet2
 PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := Redmi Note 12 Pro
+PRODUCT_MODEL := Redmi Note 12 Pro 4G
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_SYSTEM_DEVICE := sweet2
 PRODUCT_SYSTEM_NAME := sweet_global2
