@@ -18,7 +18,7 @@ $(call inherit-product, vendor/bliss/config/common_mobile_full.mk)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := sweet2
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_MODEL := Redmi Note 12 Pro
+PRODUCT_MODEL := Redmi Note 12 Pro 4G
 PRODUCT_NAME := bliss_sweet2
 PRODUCT_SYSTEM_DEVICE := sweet2
 PRODUCT_SYSTEM_NAME := sweet_global2
