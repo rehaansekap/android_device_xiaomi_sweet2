@@ -34,6 +34,10 @@ TARGET_SCREEN_WIDTH := 1080
 SHINKAI_MAINTAINER := "rehanseekap"
 TARGET_SUPPORTS_QUICK_TAP := false
 
+# Jangan pakai fingerprint canary bawaan vendor/custom (tidak tersertifikasi
+# Google -> Play Integrity DEVICE gagal). Pakai fingerprint device di atas.
+TARGET_ENABLE_FP_OVERRIDE := false
+
 # Dexopt & watchdog tuning (first boot lebih toleran)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     dalvik.vm.dex2oat-threads=4 \

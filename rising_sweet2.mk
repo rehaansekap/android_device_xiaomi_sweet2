@@ -17,6 +17,12 @@ RISING_MAINTAINER := rehanseekap
 # Inherit some common RisingOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# RisingOS: paksa headroom /system untuk installer GApps/MicroG.
+# Board var di sini diparse setelah BoardConfig dan dibaca saat image build,
+# jadi menimpa nilai dari vendor/lineage/config/BoardConfigReservedSize.mk.
+BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 1153433600
+BOARD_SYSTEMIMAGE_EXTFS_INODE_COUNT := -1
+
 # Device Identity: Xiaomi Redmi Note 12 Pro 4G (sweet2)
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := sweet2
